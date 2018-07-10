@@ -1,5 +1,8 @@
 <?php
-
+//--------------------------------------------------------------------------------------------------------------
+//BMC - module
+//desc: all Balafon's html node item function declaration 
+//--------------------------------------------------------------------------------------------------------------
 
 igk_html_reg_component_package("BMC");
 
@@ -45,7 +48,6 @@ function igk_html_node_BMCShape(){
 function igk_html_node_BMCButton(){
 	$n = igk_createNode("button", null, func_get_args());
 	$n["class"] = "igk-winui-bmc-button";
-	//$x = $n->addNoTagNode();
 	return $n;
 }
 
@@ -82,13 +84,7 @@ function igk_html_node_BMCCheckbox($id, $value=null, $array=0){
 
 function igk_html_node_BMCSurface(){
 	$n = igk_createNode("div");
-	$n["class"] = "igk-winui-bmc-surface";
-	
-	// $n->addBalafonJS()->Content = <<<EOF
-// \$igk(this.parentNode).on('mouseover', function(){
-	// \$igk('svg animate#normal').first().o.beginElement();
-// });
-// EOF;  
+	$n["class"] = "igk-winui-bmc-surface"; 
 	return $n;
 }
 
