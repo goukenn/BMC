@@ -1,0 +1,9 @@
+<?php
+
+$reg("initdoc", function($doc, $setting=null){
+
+igk_ctrl_bind_css_file($this, null);
+$doc->addTempScript($this->getScriptDir()."/main.js");
+igk_google_addfont($doc, "Roboto", "100,200,300,400,900");
+
+});
